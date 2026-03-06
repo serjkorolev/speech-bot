@@ -21,7 +21,7 @@ from telegram.ext import (
 )
 
 BOT_NAME = "Шаги к чистой Речи"
-TOKEN = "8629330704:AAFnj6tByj-aylCEzJI_H9TvngahfRWpQ2A"
+TOKEN = os.getenv("BOT_TOKEN")
 TEACHER_IDS = {781666546}
 
 DB_NAME = "speech_bot.db"
@@ -780,3 +780,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
